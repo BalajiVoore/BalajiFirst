@@ -4,7 +4,7 @@ from django.db import models
 
 class job(models.Model):
     imageNew= models.ImageField(upload_to='images')
-    summaryNew= models.CharField(max_length=200)
+    summary= models.CharField(max_length=200)
 
 
 
