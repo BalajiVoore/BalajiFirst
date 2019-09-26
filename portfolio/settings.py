@@ -25,7 +25,7 @@ SECRET_KEY = ')9f&k$-!tqi8*k#1j)^_dw%a5-x69!0%0lds)s3a4e)l7wg887'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS =[www.github.com]
+ALLOWED_HOSTS =['https://www.github.com']
 
 
 # Application definition
@@ -129,3 +129,10 @@ STATICFILES_DIRS=[
 
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
+
+
+
+try:
+    from local_settings import *
+except ImportError:
+    pass
