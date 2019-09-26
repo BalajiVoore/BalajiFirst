@@ -7,9 +7,9 @@ class personal(models.Model):
    pub_date=models.DateTimeField()
    def condi(self):
         return self.conditions[:50]
-   def dating(self):
-       return self.pub_date.strftime('%B %e %Y')
    def __str__(self):
        return self.goal
+
+
 
 

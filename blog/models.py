@@ -11,5 +11,5 @@ class blog(models.Model):
     def dater(self):
         return self.pub_date.strftime('%b %e %Y')
     def __str__(self):
-        return self.pub_date
+        return self.title
 
